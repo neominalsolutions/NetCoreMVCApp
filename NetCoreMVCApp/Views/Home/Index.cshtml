@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@* Veri tabanı ile bir bağlantı yoksa ve sadece etiket tag vari işlemler varsa *@
+
+<asp-datetime date-time="@DateTime.Now"></asp-datetime>
+
+
+@* eğer birden fazla sayfada aynı tasarım mevcut ise ve bu tasarımı birden fazla sayfaya paylaştırmak istiyorsak ve içerik dinamik veri ile çalışacak ise viewcomponent kullanımı tercih edilir. *@
+
+@* layout kendine ait bir controllera ship olmadığı için layout altına dimakik veri çekileceği zaman kesinlikle kullanılır. *@
+
+
+
+@section Scripts {
+<script>
+
+</script>
+}
